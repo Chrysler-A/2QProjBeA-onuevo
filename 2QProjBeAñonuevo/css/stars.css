@@ -1,0 +1,428 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: cursive, "Times New Roman";
+	color: #FDE74C;
+	width: 100%;
+	height: 690px;
+	padding: 0;
+	margin: 0; 
+	background-image: linear-gradient(black, #253237);
+	background-attachment: fixed;
+}
+h1{ /*This part logo and part title*/
+	float: left;
+	font-family: "Brush Script MT";
+	font-size: 50px;
+	padding: 0;
+	margin-top: 15px;
+}
+#logo{
+	width: 70px;
+	height: 70px;
+	padding: 10px;
+	float: left;
+}
+.content{
+	clear: left;
+	width: 90%;
+	height: 70%;
+	padding: 5px;
+	margin: 0 5% 5% 5%;
+	border: 2px solid yellow;
+	background-image: linear-gradient(black, #003D5B);
+}
+ul{ /*These are for the navigation bar*/
+	clear: left;
+	list-style-type: none;
+	margin: 5% 5% 0 5%;
+	padding-left: 0;
+}
+li{
+	display: inline-block;
+	margin: 0;
+	padding-left: 0;
+}
+a{ /*Links for the navigation bar*/
+	text-decoration: none;
+	color: #FDE74C;
+	border-top-right-radius: 15px;
+	padding-right: 20px;
+	transition: all 0.5s;
+}
+a#home{
+	border-left: 5px solid;
+	border-left-color: #FDE74C;
+	border-top-right-radius: 15px;
+	padding-right: 20px;
+	transition: all 0.5s;
+}
+ul#nav a:hover{ /*I thought of placing transitions*/
+	background-color: #7886C9;
+	padding-top: 10px;
+	border-left: 5px solid;
+	border-left-color: #FDE74C;
+}
+a#home:hover{ /*I thought of placing transitions*/
+	border-left-color: #FDE74C;
+}
+#arr{
+	font-size: 20px;
+}
+.arrow{ /*This is the arrow icon*/
+  	padding: 5px;
+  	border: solid;
+  	border-width: 0 3px 3px 0;
+  	border-color: #FDE74C;
+  	display: inline-block;
+  	transform: rotate(-45deg);
+}
+hr{
+	border-top: 2px solid;
+	border-color: #FDE74C;
+}
+.starinfo{
+	width: 96%;
+	height: 150px;
+	padding: 5px;
+	border: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #7886C9;
+	margin: 2%;
+}
+.starimg{
+	width: 96%;
+	height: 150px;
+	padding: 5px;
+	border: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #7886C9;
+	margin: 2%;
+	text-align: center;
+}
+#nsky{ /*Image found inside the content box*/
+	height: 100%;
+	border: 1px outset black;
+	float: left;
+	margin: 2px 5px 5px 2px;
+}
+.vrule{
+	width: 1px;
+	height: 100%;
+	border-style: solid;
+	border-width: 0 0 0 2px;
+	border-color: #FDE74C;
+	float: left;
+}
+p{
+	margin: 0;
+	text-align: justify;
+}
+.starinfo, .starimg{
+	overflow-y: auto;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: black; 
+}
+::-webkit-scrollbar-thumb{
+  background: #253237; 
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #003D5B; 
+}
+
+/*Auroras css*/
+
+#borealis{
+	height: 100%;
+	float: left;
+	margin: 2px 5px 5px 2px;
+}
+#bookmode{
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+#bookmode:target{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div#bookmode > *{
+	color: white;
+	font-family: "Times New Roman";
+	position: absolute;
+	z-index: 3;
+}
+div#bookmode #nlights{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+div#bookmode h1{
+	left: 10%;
+	font-size: 500%;
+}
+div#bookmode h2{
+	left: 5%;
+	top: 9%;
+	font-size: 300%;
+}
+div#bookmode content{
+	background-image: url("../Pictures/paper.jpg");
+	color: black;
+	top: 27%;
+	left: 4%;
+	transform: rotate(5deg);
+	height: 70%;
+	width: 30%;
+	padding: 30px;
+	text-align: justify;
+}
+content header{
+	font-family: monospace;
+	font-size: 130%;
+	text-align: center;
+}
+content hr{
+	background-color: black;
+	border-color: black;
+}
+div#bookmode #close{
+	font-family: monospace;
+	border-radius: 0;
+	padding: 10px;
+	top: 10px;
+	right: 5px;
+}
+div#bookmode #close:hover{
+	background-color: red;
+	border-radius: 0;
+	padding: 10px;
+}
+
+/*PnTM css*/
+
+ul#nav1{
+	text-align: center;
+}
+ul#nav1 a{
+	text-decoration: none;
+	color: #FDE74C;
+	border-radius: 15px 30px;
+	margin: 5px;
+	transition: all 0.5s;
+	z-index: 2;
+	border: none;
+}
+ul#nav1 a:hover{ 
+	background-color: #7886C9;
+	padding: 10px;
+}
+.interact{
+	clear: left;
+	width: 94%;
+	height: 63%;
+	padding: 5px;
+	margin: 2% 3% 2% 3%;
+	border: solid;
+	border-width: 2px;
+	border-color: #7886C9;
+	background-color: black;
+}
+
+/*Mercury info*/
+
+.mercury{
+	float: left;
+	background: url('../Pictures/system.jpg') no-repeat 0 0;
+	width: 173px;
+	height: 420px;
+}
+#mercury{
+	display: none;
+}
+#mercury:target{
+	display: block;
+	width: 94%;
+	min-height: 63%;
+	padding: 5px;
+	margin: 2% 3% 2% 3%;
+	border: solid;
+	border-width: 2px;
+	border-color: #7886C9;
+	background-image: linear-gradient(black, #003D5B);
+}
+
+/*Venus info*/
+
+.venus{
+	float: left;
+	background: url('../Pictures/system.jpg') no-repeat -176px 0;
+	width: 91px;
+	height: 420px;
+}
+#venus{
+	display: none;
+}
+#venus:target{
+	display: block;
+	width: 94%;
+	min-height: 63%;
+	padding: 5px;
+	margin: 2% 3% 2% 3%;
+	border: solid;
+	border-width: 2px;
+	border-color: #7886C9;
+	background-image: linear-gradient(black, #003D5B);
+}
+
+/*Earth info*/
+
+.earth{
+	float: left;
+	background: url('../Pictures/system.jpg') no-repeat -271px 0;
+	width: 90px;
+	height: 420px;
+}
+#earth{
+	display: none;
+}
+#earth:target{
+	display: block;
+	width: 94%;
+	min-height: 63%;
+	padding: 5px;
+	margin: 2% 3% 2% 3%;
+	border: solid;
+	border-width: 2px;
+	border-color: #7886C9;
+	background-image: linear-gradient(black, #003D5B);
+}
+
+/*Mars info*/
+
+.mars{
+	float: left;
+	background: url('../Pictures/system.jpg') no-repeat -366px 0;
+	width: 70px;
+	height: 420px;
+}
+#mars{
+	display: none;
+}
+#mars:target{
+	display: block;
+	width: 94%;
+	min-height: 63%;
+	padding: 5px;
+	margin: 2% 3% 2% 3%;
+	border: solid;
+	border-width: 2px;
+	border-color: #7886C9;
+	background-image: linear-gradient(black, #003D5B);
+}
+
+/*Jupiter info*/
+
+.jupiter{
+	float: left;
+	background: url('../Pictures/system.jpg') no-repeat -448px 0;
+	width: 225px;
+	height: 420px;
+}
+#jupiter{
+	display: none;
+}
+#jupiter:target{
+	display: block;
+	width: 94%;
+	min-height: 63%;
+	padding: 5px;
+	margin: 2% 3% 2% 3%;
+	border: solid;
+	border-width: 2px;
+	border-color: #7886C9;
+	background-image: linear-gradient(black, #003D5B);
+}
+
+/*Saturn info*/
+
+.saturn{
+	float: left;
+	background: url('../Pictures/system.jpg') no-repeat -672px 0;
+	width: 250px;
+	height: 420px;
+}
+#saturn{
+	display: none;
+}
+#saturn:target{
+	display: block;
+	width: 94%;
+	min-height: 63%;
+	padding: 5px;
+	margin: 2% 3% 2% 3%;
+	border: solid;
+	border-width: 2px;
+	border-color: #7886C9;
+	background-image: linear-gradient(black, #003D5B);
+}
+
+/*Uranus info*/
+
+.uranus{
+	float: left;
+	background: url('../Pictures/system.jpg') no-repeat -920px 0;
+	width: 147px;
+	height: 420px;
+}
+#uranus{
+	display: none;
+}
+#uranus:target{
+	display: block;
+	width: 94%;
+	min-height: 63%;
+	padding: 5px;
+	margin: 2% 3% 2% 3%;
+	border: solid;
+	border-width: 2px;
+	border-color: #7886C9;
+	background-image: linear-gradient(black, #003D5B);
+}
+
+/*Neptune info*/
+
+.neptune{
+	float: left;
+	background: url('../Pictures/system.jpg') no-repeat -1068px 0;
+	width: 130px;
+	height: 420px;
+}
+#neptune{
+	display: none;
+}
+#neptune:target{
+	display: block;
+	width: 94%;
+	min-height: 63%;
+	padding: 5px;
+	margin: 2% 3% 2% 3%;
+	border: solid;
+	border-width: 2px;
+	border-color: #7886C9;
+	background-image: linear-gradient(black, #003D5B);
+}
